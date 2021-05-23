@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Potta One', cursive;
+}
+
+.facebook{
+    background: #3b5999;
+}
+
+.twitter{
+    background: #55acee;
+}
+
+.instagram{
+    background: #e4405f;
+}
+
+
+
+.css-bar{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 10;
+}
+
+.css-bar a{
+   text-decoration: none;
+   width: 230px;
+   color: #fff;
+   display: flex;
+   justify-content:flex-end;
+   align-items: center;
+   padding: 5px;
+   font-size: 17px;
+   transform: translateX(-180px);
+   -webkit-transform: translateX(-180px);
+   -ms-transform: translateX(-180px);
+
+   transition: all 0.5s linear;
+   -webkit-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+}
+.css-bar a:hover{
+    transform: translateX(0);
+   -webkit-transform: translateX(0);
+   -ms-transform: translateX(0);
+}
+
+
+.css-bar a i{
+padding-left: 20px;
+font-size: 30px !important;
+animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+
+
+
+@keyframes letszoom {
+    0% {
+        transform: scale(0.8);
+    }
+
+     100% {
+        transform: scale(1);
+    }
+    
+}
